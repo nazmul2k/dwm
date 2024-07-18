@@ -9,10 +9,10 @@
 
 #Sublime Text 4
 super + s
-    subl
+    geany
 
 #Rofi
-super + F2
+super + shift + d
     rofi -show drun
 
 super + F1
@@ -25,9 +25,7 @@ super + F1
 #qutebrowser
 super + c
     qutebrowser
-#Brave
-super + b
-    brave
+
 #thunar
 super + e
     thunar
@@ -37,29 +35,19 @@ super + w
     firefox
 
 
-#Htop
-#super + h
-#    alacritty 'htop task manager' -e htop
-
 #lock
 super + x
     archlinux-logout
 
 #Rofi theme selector
-super + r
-    rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi
+super + b
+    brave-browser
 
 # copyQ
 super + v
     copyq menu
 
-#Pragha
-super + m
-    pragha
 
-#alacritty
-super + Return
-    alacritty
 
 #Xkill
 super + Escape
@@ -76,7 +64,7 @@ super + KP_Enter
 
 #Alternate terminal
 super + shift + Return
-	st
+	alacritty
 
 # Pavucontrol
 super + shift + v
@@ -87,13 +75,6 @@ super + shift + v
 super + shift + KP_Enter
 	st
 
-#dmenu
-super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fa46fa' -sb '#4287f5' -sf '#2ffaf0' -fn 'JetBrainsMono NFM:bold:pixelsize=14'
-    
-#dmenu
-super + d
-    rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/qtile/rofi/launcher2.rasi
 
 #reload sxhkd:
 super + shift + alt + r
@@ -116,11 +97,6 @@ ctrl + alt + e
 ctrl + alt + g
     google-chrome-stable -no-default-browser-check
 
-#Firefox
-ctrl + alt + f
-     firefox
-
-
 #Xfce4-settings-manager
 ctrl + alt + m
      xfce4-settings-manager
@@ -140,9 +116,6 @@ ctrl + alt + s
 ctrl + alt + Return
     alacritty
 
-#alacritty
-ctrl + alt + t
-    alacritty
 
 #Vivaldi
 ctrl + alt + v
@@ -171,56 +144,38 @@ ctrl + alt + a
 #VARIETY KEYS WITH PYWAL
 #################################################################
 
-#Wallpaper trash
-alt + shift + t
-    variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
-#Wallpaper next
-alt + shift + n
-    variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-
-#Wallpaper previous
-alt + shift + p
-    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-
-#Wallpaper favorite
-alt + shift + f
-    variety -f && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-
-#Wallpaper update
-alt + shift + u
-    wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper trash
-alt + t
+ctrl + alt + t
     variety -t
 
 #Wallpaper next
-alt + n
+ctrl + alt + n
     variety -n
 
 #Wallpaper previous
-alt + p
+ctrl + alt + p
     variety -p
 
 #Wallpaper favorite
-alt + f
+ctrl + alt + f
     variety -f
 
 #Wallpaper previous
-alt + Left
+ctrl + alt + Left
     variety -p
 
 #Wallpaper next
-alt + Right
+ctrl + alt + Right
     variety -n
 
 #Wallpaper toggle-pause
-alt + Up
+ctrl + alt + Up
     variety --toggle-pause
 
 #Wallpaper resume
-alt + Down
+ctrl + alt + Down
     variety --resume
 
 #################################################################
@@ -282,11 +237,11 @@ ctrl + shift + Print
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    amixer set Master 5%+
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
+    amixer set Master 5%-
 
 #Mute
 XF86AudioMute
@@ -347,4 +302,4 @@ XF86MonBrightnessDown
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/qtile/scripts/picom-toggle.sh
+    ~/.config/dwm/scripts/picom-toggle.sh
