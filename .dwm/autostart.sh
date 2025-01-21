@@ -44,7 +44,7 @@ xrandr -s 1920x1080 -r 75 &
 #start sxhkd to replace Qtile native key-bindings
 run sxhkd -c ~/.config/dwm/sxhkdrc &
 
-
+run ~/.fehbg &
 #starting utility applications at boot time
 #run variety &
 run nm-applet &
