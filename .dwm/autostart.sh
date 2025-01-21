@@ -46,13 +46,13 @@ run sxhkd -c ~/.config/dwm/sxhkdrc &
 
 
 #starting utility applications at boot time
-run variety &
+#run variety &
 run nm-applet &
 #run pamac-tray &
 run xautolock -time 10 -locker slock &
 numlockx on &
-picom --config $HOME/.config/dwm/scripts/picom.conf &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+picom --config ~/.config/dwm/scripts/picom.conf &
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
 run copyq &
 #starting user applications at boot time
@@ -71,7 +71,4 @@ run volumeicon &
 #run /usr/bin/octopi-notifier &
 
 # status bar
-while xsetroot -name "`date`"
-    do
-      sleep 1
-    done &
+run slstatus &
