@@ -87,7 +87,7 @@ super + shift + alt + r
 
 #arcolinux-welcome-app
 ctrl + alt + w
-     arcolinux-welcome-app
+     brave-browser
 
 #archlinux-tweak-tool
 ctrl + alt + e
@@ -110,7 +110,7 @@ ctrl + alt + r
 
 #Spotify
 ctrl + alt + s
-   spotify
+   
 
 #alacritty
 ctrl + alt + Return
@@ -280,14 +280,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     xbacklight -dec 10
 
-#########################
-#        POLYBAR        #
-#########################
-
-# Qtile has its own bar
-#Hide polybar
-#super + y
-#    polybar-msg cmd toggle
 
 
 #################################################################

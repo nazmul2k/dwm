@@ -11,7 +11,7 @@ function run {
 #More info in the script
 #run $HOME/.config/qtile/scripts/set-screen-resolution-in-virtualbox.sh
 xrandr -s 1920x1080 -r 75 &
-/home/nh/.config/dwm/scripts/mouseaccel.sh &
+#/home/nh/.config/dwm/scripts/mouseaccel.sh &
 # xinput --set-prop 10 'libinput Accel Profile Enabled' 0, 1 &
 # xset r rate 300 35 &
 #Find out your monitor name with xrandr or arandr (save and you get this line)
@@ -56,7 +56,7 @@ picom --config ~/.config/dwm/scripts/picom.conf &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
 run copyq &
 #starting user applications at boot time
-run volumeicon &
+run /usr/bin/volumeicon &
 #run discord &
 #nitrogen --restore &
 #run caffeine -a &
